@@ -1,4 +1,3 @@
-/* สร้างหน้า CV จากข้อมูลใน data.js — ไม่ต้องแก้ไฟล์นี้ */
 const $=id=>document.getElementById(id);
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 document.title="Resume — "+DATA.name;
