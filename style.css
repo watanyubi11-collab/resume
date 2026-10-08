@@ -1,4 +1,3 @@
-/* ===== โทนสี: Black / White / Gray (monochrome) ===== */
 :root{
   --bg:#ececec;--surface:#fafafa;--text:#111111;--muted:#5c5c5c;--line:#d4d4d4;
   --accent:#111111;--accent2:#6b6b6b;--on-accent:#ffffff;--shadow:0 1px 0 rgba(17,17,17,.04),0 10px 30px rgba(17,17,17,.07);
@@ -22,15 +21,12 @@ a{color:inherit;text-decoration:none}
 section{padding:68px 0}
 ::selection{background:var(--accent);color:var(--on-accent)}
 
-/* progress bar */
 #progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--accent);z-index:100}
 
-/* heading */
 h2{font-size:1.7rem;margin:0 0 30px;display:flex;align-items:center;gap:14px;counter-increment:sec}
 h2::before{content:"0" counter(sec);font:600 .8rem "JetBrains Mono",monospace;color:var(--on-accent);background:var(--accent);padding:3px 8px;border-radius:3px}
 h2::after{content:"";flex:1;height:1px;background:var(--line)}
 
-/* nav */
 nav{position:sticky;top:0;z-index:20;backdrop-filter:blur(14px);background:color-mix(in srgb,var(--bg) 82%,transparent);border-bottom:1px solid var(--line)}
 nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
 .links{display:flex;gap:22px;align-items:center;font-size:.88rem;color:var(--muted)}
@@ -41,7 +37,6 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:6
 #theme{border:1px solid var(--line);background:var(--surface);color:var(--text);border-radius:4px;padding:4px 9px;cursor:pointer;transition:.2s}
 #theme:hover{border-color:var(--accent);transform:rotate(25deg)}
 
-/* hero */
 .hero{position:relative;padding:80px 0 56px;overflow:hidden;--mx:50%;--my:30%}
 .hero::before{content:"";position:absolute;inset:0;background:radial-gradient(420px circle at var(--mx) var(--my),color-mix(in srgb,var(--accent) 8%,transparent),transparent 70%);pointer-events:none}
 .hero .wrap{position:relative;display:grid;grid-template-columns:auto 1fr;gap:52px;align-items:center}
@@ -59,7 +54,6 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:6
 .btn.primary{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
 .btn:hover{transform:translate(-3px,-3px);box-shadow:4px 4px 0 var(--text)}
 
-/* marquee */
 .marquee{overflow:hidden;border-block:1px solid var(--line);background:var(--surface);padding:12px 0;white-space:nowrap}
 .marquee #marquee{display:inline-flex;animation:slide 32s linear infinite}
 .marquee:hover #marquee{animation-play-state:paused}
@@ -67,7 +61,6 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:6
 .marquee span::before{content:"▪";color:var(--accent);margin-right:26px}
 @keyframes slide{to{transform:translateX(-50%)}}
 
-/* cards + spotlight */
 .card{position:relative;overflow:hidden;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:22px;box-shadow:var(--shadow);
   transition:opacity .6s,transform .6s,border-color .25s,box-shadow .25s}
 .card::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;opacity:0;transition:opacity .3s;
@@ -81,7 +74,6 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:6
 .stat b{display:block;font:700 1.9rem "Space Grotesk",sans-serif;color:var(--accent)}
 .stat span{font-size:.8rem;color:var(--muted)}
 
-/* skills */
 .skill{margin-bottom:14px}
 .skill div{display:flex;justify-content:space-between;font-size:.88rem;margin-bottom:5px}
 .bar-bg{height:8px;background:var(--line);border-radius:2px;overflow:hidden}
@@ -91,7 +83,6 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:6
 .chip{font-size:.76rem;padding:3px 10px;border-radius:3px;border:1px solid color-mix(in srgb,var(--accent2) 55%,transparent);color:var(--accent2);background:color-mix(in srgb,var(--accent2) 8%,transparent);transition:.2s}
 .chip:hover{background:var(--accent2);color:var(--surface)}
 
-/* timeline */
 .timeline{border-left:2px solid var(--line);margin-left:6px;padding-left:28px}
 .item{position:relative;margin-bottom:26px}
 .item::before{content:"";position:absolute;left:-37px;top:7px;width:12px;height:12px;background:var(--bg);border:3px solid var(--accent);transform:rotate(45deg);transition:.3s}
@@ -100,7 +91,6 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:6
 .item .meta{font-size:.8rem;color:var(--accent);margin-bottom:6px}
 .item ul{margin:6px 0 0;padding-left:18px;color:var(--muted);font-size:.93rem}
 
-/* image cards */
 .pcard{padding:0;cursor:pointer}
 .pcard:hover{transform:translateY(-5px)}
 .thumb{aspect-ratio:16/10;width:100%;object-fit:cover;display:block;background:var(--line);transition:transform .5s,filter .3s;filter:saturate(.9)}
@@ -117,11 +107,9 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:6
 .contact a.card:hover{transform:translateY(-4px)}
 footer{text-align:center;padding:28px;color:var(--muted);font-size:.8rem;border-top:1px solid var(--line);background:var(--surface)}
 
-/* lightbox */
 #lb{position:fixed;inset:0;background:rgba(10,14,18,.88);display:none;place-items:center;z-index:50;padding:20px;cursor:zoom-out}
 #lb.open{display:grid}#lb img{max-width:100%;max-height:90vh;border-radius:4px}
 
-/* reveal (ลำดับการเด้งเข้ามา) */
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}
 .reveal.show{opacity:1;transform:none}
 .reveal .card,.reveal .item{opacity:0;transform:translateY(18px)}
