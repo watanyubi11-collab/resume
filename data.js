@@ -13,7 +13,7 @@ const DATA = {
   skills: [
     ["Hardware & การซ่อมบำรุงคอมพิวเตอร์", 90],
     ["Windows / Microsoft Office", 90],
-    ["Developer", 75]
+    ["Developer", 75],
     ["Network พื้นฐาน (LAN, Wi-Fi, TCP/IP)", 75],
     ["Helpdesk & Ticketing", 80],
     ["Linux เบื้องต้น", 55]
