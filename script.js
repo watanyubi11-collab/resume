@@ -1,8 +1,7 @@
-/* ส่วนการทำงานของเว็บ — ปกติไม่ต้องแก้ (ข้อมูลอยู่ใน data.js) */
 const $=id=>document.getElementById(id);
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const icons=["🖼️","📊","🛠️","🏅"];
-function img(src,cls,i,alt){ // รูป + fallback placeholder
+function img(src,cls,i,alt){ 
   return `<img class="${cls}" src="${esc(src||'')}" alt="${esc(alt)}" loading="lazy" onerror="this.outerHTML='<div class=&quot;ph&quot;>${icons[i%4]}</div>'">`;
 }
 document.title=DATA.name+" — "+DATA.role;
@@ -24,7 +23,6 @@ if(DATA.certs.length){
 $('contactGrid').innerHTML=DATA.contacts.map(c=>`<a class="card" href="${esc(c[3])}" target="_blank" rel="noopener">${c[0]}<br><b>${esc(c[1])}</b><br><span class="mono" style="font-size:.85rem">${esc(c[2])}</span></a>`).join('');
 $('foot').textContent=`© ${new Date().getFullYear()} ${DATA.name}`;
 
-// lightbox (คลิกรูปเพื่อขยาย)
 document.addEventListener('click',e=>{
   const z=e.target.closest('img.zoom');
   if(z){$('lb').querySelector('img').src=z.src;$('lb').classList.add('open')}
@@ -32,12 +30,10 @@ document.addEventListener('click',e=>{
 });
 document.addEventListener('keydown',e=>e.key==='Escape'&&$('lb').classList.remove('open'));
 
-// theme
 const root=document.documentElement;
 try{const t=localStorage.getItem('theme');if(t)root.dataset.theme=t}catch(e){}
 $('theme').onclick=()=>{const d=root.dataset.theme?root.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;root.dataset.theme=d?'light':'dark';try{localStorage.setItem('theme',root.dataset.theme)}catch(e){}};
 
-// typing effect
 (function(){let w=0,c=0,del=false;const el=$('typed');
   (function tick(){const word=DATA.typing[w%DATA.typing.length];
     el.textContent="> "+word.slice(0,c);
@@ -45,13 +41,10 @@ $('theme').onclick=()=>{const d=root.dataset.theme?root.dataset.theme==='dark':m
     if(del&&c===0){del=false;w++}
     c+=del?-1:1;setTimeout(tick,del?40:90)})()})();
 
-// reveal + skill bars
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;e.target.classList.add('show');e.target.querySelectorAll('.bar-fill').forEach(b=>b.style.width=b.dataset.w+'%');io.unobserve(e.target)}),{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 
 
-// ===== ลูกเล่นเพิ่มเติม =====
-// แถบความคืบหน้าการเลื่อน + เมนูที่กำลังอยู่
 const prog=$('progress'),secs=[...document.querySelectorAll('section[id]')],navA=[...document.querySelectorAll('.links a[href^="#"]')];
 addEventListener('scroll',()=>{
   const h=document.documentElement;
@@ -59,7 +52,7 @@ addEventListener('scroll',()=>{
   let cur='';secs.forEach(s=>{if(s.getBoundingClientRect().top<140)cur=s.id});
   navA.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+cur));
 },{passive:true});
-// แสงตามเมาส์ (การ์ด + หัวเว็บ)
+
 const heroEl=document.querySelector('.hero');
 document.addEventListener('mousemove',e=>{
   const c=e.target.closest('.card');
