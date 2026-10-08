@@ -4,8 +4,8 @@ const DATA = {
   nick: "big",
   role: "IT Support & System Admin",
   status: "● พร้อมรับงานใหม่",
-  typing: ["IT Support", "Network & Hardware", "Troubleshooter"],
-  intro: "ดูแลระบบคอมพิวเตอร์และเครือข่าย แก้ปัญหาหน้างานได้รวดเร็ว และสนใจพัฒนาทักษะด้าน IT อย่างต่อเนื่อง",
+  typing: ["IT Support", "Network & Hardware", "Troubleshooter","WEB-Site",""],
+  intro: "ดูแลระบบคอมพิวเตอร์และเครือข่าย แก้ปัญหาหน้างานได้รวดเร็ว และสนใจพัฒนาทักษะด้าน IT , Developer อย่างต่อเนื่อง",
   photo: "images/profile.jpg",
   about: "ผมจบปริญญาตรี สาขาวิศวกรรมคอมพิวเตอร์และการสื่อสาร จากมหาวิทยาลัยราชภัฏอุดรธานี เริ่มต้นสายงานจากการเป็น Admin ที่ร้านมือถือ ได้ฝึกประเมินอาการเสีย ซ่อมเครื่อง และอธิบายปัญหาทางเทคนิคให้ลูกค้าเข้าใจง่าย ปัจจุบันทำงานเป็น IT Support ที่โรงเรียนกวดวิชา ดูแลคอมพิวเตอร์ ระบบเครือข่าย และบัญชีผู้ใช้ พร้อมพัฒนาเว็บไซต์ของโรงเรียนด้วย PHP, JavaScript และ MySQL นอกจากนี้เคยทำโครงงานมือหุ่นยนต์ด้วย Arduino และ Fusion 360 ตอนนี้กำลังศึกษา Cisco CCNA, Linux, Cloud และ Cybersecurity เพื่อก้าวไปเป็นผู้ดูแลระบบที่ดูแลโครงสร้างพื้นฐานไอทีได้ครบวงจรม",
   stats: [["3+","ปีประสบการณ์"],["100+","เครื่องที่ดูแล"],["10+","งานติดตั้งระบบ"],["2","ใบรับรอง"]],
@@ -13,11 +13,12 @@ const DATA = {
   skills: [
     ["Hardware & การซ่อมบำรุงคอมพิวเตอร์", 90],
     ["Windows / Microsoft Office", 90],
+    ["Developer", 75]
     ["Network พื้นฐาน (LAN, Wi-Fi, TCP/IP)", 75],
     ["Helpdesk & Ticketing", 80],
     ["Linux เบื้องต้น", 55]
   ],
-  tools: ["Windows 10/11","Windows Server","Active Directory","Microsoft 365","Remote Desktop","TeamViewer","Router / Switch","CCTV","Printer / Scanner","Antivirus"],
+  tools: ["Windows 10/11","Windows Server","Active Directory","Microsoft 365","Remote Desktop","TeamViewer","Router / Switch","CCTV","Printer / Scanner","Antivirus","PHP","HTML","CSS","JavaScript","IOT"],
 
   learning: ["Cisco CCNA","Linux","Cloud (AWS/Azure)","Cybersecurity","Python Scripting","C#"],
 
