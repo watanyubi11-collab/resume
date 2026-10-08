@@ -1,7 +1,7 @@
-:root{--accent:#d9480f;--accent2:#0e7c86;--ink:#12161c;--text:#1f252d;--muted:#5b6470;--line:#d9ddd5;--paper:#fbfbf8;--dark:#232a33;--dtext:#e8ebef;--dmuted:#9aa5b1}
+:root{--accent:#111111;--accent2:#5c5c5c;--dacc:#c8c8c8;--ink:#111111;--text:#1f252d;--muted:#5c5c5c;--line:#d8d8d8;--paper:#fafafa;--dark:#1f1f1f;--dtext:#ececec;--dmuted:#a0a0a0}
 *{box-sizing:border-box}
-body{margin:0;counter-reset:sec;color:var(--text);font-family:"Noto Sans Thai",system-ui,sans-serif;line-height:1.6;font-size:14px;background:#dcdcd5;
-  background-image:linear-gradient(rgba(18,22,28,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(18,22,28,.05) 1px,transparent 1px);background-size:40px 40px}
+body{margin:0;counter-reset:sec;color:var(--text);font-family:"Noto Sans Thai",system-ui,sans-serif;line-height:1.6;font-size:14px;background:#dedede;
+  background-image:linear-gradient(rgba(17,17,17,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(17,17,17,.05) 1px,transparent 1px);background-size:40px 40px}
 h1,h2,h3,h4{font-family:"Space Grotesk","Noto Sans Thai",sans-serif}
 .mono{font-family:"JetBrains Mono",ui-monospace,monospace}
 .toolbar{max-width:210mm;margin:16px auto;display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
@@ -9,26 +9,26 @@ h1,h2,h3,h4{font-family:"Space Grotesk","Noto Sans Thai",sans-serif}
 .toolbar button{background:var(--accent);border-color:var(--accent);color:#fff}
 .toolbar a:hover,.toolbar button:hover{transform:translate(-2px,-2px);box-shadow:3px 3px 0 var(--ink)}
 
-.page{width:210mm;min-height:297mm;margin:0 auto 30px;background:var(--paper);border-top:5px solid var(--accent);display:grid;grid-template-columns:70mm 1fr;box-shadow:0 14px 50px rgba(18,22,28,.22)}
+.page{width:210mm;min-height:297mm;margin:0 auto 30px;background:var(--paper);border-top:5px solid var(--accent);display:grid;grid-template-columns:70mm 1fr;box-shadow:0 14px 50px rgba(17,17,17,.22)}
 
 /* ฝั่งซ้าย (กราไฟต์) */
 aside{background:var(--dark);color:var(--dtext);padding:26px 20px}
-.photo{display:block;width:calc(100% - 8px);aspect-ratio:1;object-fit:cover;border-radius:4px;border:2px solid var(--dtext);box-shadow:8px 8px 0 var(--accent);margin:4px 0 22px;transition:.3s;background:var(--dark)}
-.photo:hover{transform:translate(-3px,-3px);box-shadow:11px 11px 0 var(--accent)}
-aside h3{display:flex;align-items:center;gap:8px;font:600 .7rem "JetBrains Mono",monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:20px 0 8px}
-aside h3::after{content:"";flex:1;height:1px;background:#3a4451}
+.photo{display:block;width:calc(100% - 8px);aspect-ratio:1;object-fit:cover;border-radius:4px;border:2px solid var(--dtext);box-shadow:8px 8px 0 var(--dacc);margin:4px 0 22px;transition:.3s;background:var(--dark)}
+.photo:hover{transform:translate(-3px,-3px);box-shadow:11px 11px 0 var(--dacc)}
+aside h3{display:flex;align-items:center;gap:8px;font:600 .7rem "JetBrains Mono",monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--dacc);margin:20px 0 8px}
+aside h3::after{content:"";flex:1;height:1px;background:#3a3a3a}
 .plain{list-style:none;margin:0;padding:0;font-size:.84rem}.plain li{margin-bottom:6px;word-break:break-word}
 .sk{margin-bottom:9px;font-size:.8rem}.sk b{font-weight:400;display:block;color:var(--dtext)}
-.bar{height:5px;background:#3a4451;border-radius:1px;overflow:hidden;margin-top:2px}
-.bar i{display:block;height:100%;transform-origin:left;background:repeating-linear-gradient(135deg,var(--accent) 0 6px,#ff8a55 6px 12px)}
+.bar{height:5px;background:#3a3a3a;border-radius:1px;overflow:hidden;margin-top:2px}
+.bar i{display:block;height:100%;transform-origin:left;background:repeating-linear-gradient(135deg,var(--dacc) 0 6px,#8a8a8a 6px 12px)}
 .chips{display:flex;flex-wrap:wrap;gap:5px}
-.chip{font:400 .7rem "JetBrains Mono",monospace;padding:2px 8px;border-radius:3px;border:1px solid #3f7f86;color:#8adbe2;background:rgba(14,124,134,.16)}
-.chip.dash{border-style:dashed;border-color:#56616e;color:var(--dmuted);background:transparent}
+.chip{font:400 .7rem "JetBrains Mono",monospace;padding:2px 8px;border-radius:3px;border:1px solid #4a4a4a;color:#d0d0d0;background:rgba(255,255,255,.06)}
+.chip.dash{border-style:dashed;border-color:#5a5a5a;color:var(--dmuted);background:transparent}
 
 /* ฝั่งขวา */
 .main{padding:30px 32px}
 h1{font-size:2.15rem;margin:0;line-height:1.15;letter-spacing:-.01em;color:var(--ink)}
-.role{color:var(--accent);margin:6px 0 4px;font-size:.9rem}
+.role{color:var(--accent2);margin:6px 0 4px;font-size:.9rem}
 h2{display:flex;align-items:center;gap:10px;font-size:1rem;margin:22px 0 10px;counter-increment:sec;color:var(--ink)}
 h2::before{content:"0" counter(sec);font:600 .68rem "JetBrains Mono",monospace;color:#fff;background:var(--accent);padding:2px 7px;border-radius:2px}
 h2::after{content:"";flex:1;height:1px;background:var(--line)}
@@ -37,7 +37,7 @@ h2::after{content:"";flex:1;height:1px;background:var(--line)}
 .job::before{content:"";position:absolute;left:-6px;top:7px;width:9px;height:9px;background:var(--paper);border:2px solid var(--accent);transform:rotate(45deg)}
 .job:hover{border-left-color:var(--accent)}
 .job h4{margin:0;font-size:.97rem;color:var(--ink)}
-.meta{font:400 .74rem "JetBrains Mono",monospace;color:var(--accent)}
+.meta{font:400 .74rem "JetBrains Mono",monospace;color:var(--accent2)}
 .job ul{margin:4px 0 0;padding-left:18px;color:var(--muted)}
 .proj{margin-bottom:8px;padding-left:12px;border-left:3px solid var(--accent2);break-inside:avoid}
 .proj b{font-size:.92rem;color:var(--ink)}.proj span{color:var(--muted)}

@@ -2,7 +2,7 @@
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const li=a=>a.map(x=>`<li>${esc(x)}</li>`).join('');
 document.title="CV — "+DATA.name;
-const fallback="data:image/svg+xml,"+encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 110 130'><rect width='110' height='130' fill='#6366f1'/><text x='55' y='82' font-size='56' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='700'>${esc((DATA.nick||'D')[0]).toUpperCase()}</text></svg>`);
+const fallback="data:image/svg+xml,"+encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 110 130'><rect width='110' height='130' fill='#111111'/><text x='55' y='82' font-size='56' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='700'>${esc((DATA.nick||'D')[0]).toUpperCase()}</text></svg>`);
 const sec=(t,html)=>`<h2>${t}</h2>${html}`;
 let h=`<div class="head"><img src="${esc(DATA.photo)}" onerror="this.onerror=null;this.src='${fallback}'" alt="">
 <div><h1>${esc(DATA.name)}</h1><div class="role mono">${esc(DATA.role)}</div>

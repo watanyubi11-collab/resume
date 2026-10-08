@@ -8,7 +8,7 @@ function img(src,cls,i,alt){ // รูป + fallback placeholder
 document.title=DATA.name+" — "+DATA.role;
 $('logo').innerHTML=`&lt;<span style="color:var(--accent)">${esc(DATA.nick)}</span>/&gt;`;
 $('avatar').src=DATA.photo;
-$('avatar').onerror=function(){this.onerror=null;this.src="data:image/svg+xml,"+encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='#d9480f'/><stop offset='1' stop-color='#0e7c86'/></linearGradient></defs><rect width='200' height='200' fill='url(#g)'/><text x='100' y='128' font-size='90' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='700'>${esc(DATA.nick[0]||'D').toUpperCase()}</text></svg>`)};
+$('avatar').onerror=function(){this.onerror=null;this.src="data:image/svg+xml,"+encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='#111111'/><stop offset='1' stop-color='#6b6b6b'/></linearGradient></defs><rect width='200' height='200' fill='url(#g)'/><text x='100' y='128' font-size='90' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='700'>${esc(DATA.nick[0]||'D').toUpperCase()}</text></svg>`)};
 $('status').textContent=DATA.status;
 $('title').innerHTML=`สวัสดี ผม <span class="grad">${esc(DATA.name)}</span><br>${esc(DATA.role)}`;
 $('intro').textContent=DATA.intro;
