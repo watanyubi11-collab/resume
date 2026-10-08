@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Resume</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Sans+Thai:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="resume.css">
+</head>
+<body>
+<div class="toolbar">
+  <a href="index.html">← กลับหน้าเว็บ</a>
+  <button onclick="window.print()">🖨️ พิมพ์ / บันทึกเป็น PDF</button>
+</div>
+
+<main class="page">
+  <aside>
+    <img id="photo" class="photo" alt="รูปโปรไฟล์">
+    <h3>ติดต่อ</h3><ul id="contacts" class="plain"></ul>
+    <h3>ทักษะ</h3><div id="skills"></div>
+    <h3>เครื่องมือ</h3><div id="tools" class="chips"></div>
+    <div id="learnBox"><h3>กำลังเรียนรู้</h3><div id="learning" class="chips"></div></div>
+  </aside>
+  <section class="main">
+    <header><h1 id="name"></h1><div id="role" class="role mono"></div></header>
+    <h2>เกี่ยวกับฉัน</h2><p id="about"></p>
+    <h2>ประสบการณ์ & การศึกษา</h2><div id="timeline"></div>
+    <h2>ผลงาน</h2><div id="projects"></div>
+    <div id="certBox"><h2>เกียรติบัตร</h2><ul id="certs" class="plain"></ul></div>
+  </section>
+</main>
+<script src="data.js"></script>
+<script src="resume.js"></script>
+</body>
+</html>

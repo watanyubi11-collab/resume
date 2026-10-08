@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Resume / CV</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Sans+Thai:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav><div class="wrap">
+  <a class="mono" href="#top" id="logo"></a>
+  <div class="links"><a href="#about">เกี่ยวกับ</a><a href="#skills">ทักษะ</a><a href="#exp">ประสบการณ์</a><a href="#projects">ผลงาน</a><a href="#certs" id="navCert">เกียรติบัตร</a><a href="#contact">ติดต่อ</a><a href="resume.html" style="color:var(--accent);font-weight:600">Resume</a><a href="cv.html" style="color:var(--accent);font-weight:600">CV</a><button id="theme" aria-label="theme">🌓</button></div>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+  <img class="avatar" id="avatar" alt="รูปโปรไฟล์">
+  <div>
+    <span class="tag mono" id="status"></span>
+    <h1 id="title"></h1>
+    <div class="typing mono"><span id="typed"></span><span class="cursor"></span></div>
+    <p id="intro"></p>
+    <div class="btns"><a class="btn primary" href="#projects">ดูผลงาน</a><a class="btn" href="resume.html">📄 Resume</a><a class="btn" href="cv.html">📑 CV</a><a class="btn" href="#contact">ติดต่อผม</a></div>
+  </div>
+</div></header>
+
+<section id="about"><div class="wrap reveal"><h2>เกี่ยวกับฉัน</h2><div class="card"><p id="about-text" style="margin-top:0"></p><div class="stats" id="stats"></div></div></div></section>
+<section id="skills"><div class="wrap reveal"><h2>ทักษะ</h2><div class="grid"><div class="card" id="bars"></div><div class="card" id="chips"></div></div></div></section>
+<section id="exp"><div class="wrap reveal"><h2>ประสบการณ์ & การศึกษา</h2><div class="timeline" id="timeline"></div></div></section>
+<section id="projects"><div class="wrap reveal"><h2>ผลงาน</h2><div class="grid" id="proj"></div></div></section>
+<section id="certs"><div class="wrap reveal"><h2>เกียรติบัตร</h2><div class="grid" id="certGrid"></div></div></section>
+<section id="contact"><div class="wrap contact reveal"><h2>ติดต่อ</h2><div class="grid" id="contactGrid"></div></div></section>
+<footer class="mono" id="foot"></footer>
+<div id="lb"><img alt=""></div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
