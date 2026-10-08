@@ -1,4 +1,3 @@
-/* สร้างหน้า CV (แบบละเอียด) จาก DATA + CV ใน data.js — ไม่ต้องแก้ไฟล์นี้ */
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const li=a=>a.map(x=>`<li>${esc(x)}</li>`).join('');
 document.title="CV — "+DATA.name;
