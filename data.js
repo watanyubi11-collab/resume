@@ -34,7 +34,7 @@ const DATA = {
   ],
 
   certs: [
-    { title:"ผู้ช่วยวิทยากรโครงการส่งเสริมทักษะทางวิศวกรรมราชภัฏอุดรธานี-เซนต์เมรี่", issuer:"โรงเเรียนเซนต์เมรี่ จังหวัดอุดรธานี", image:"images/senamery.jpg" },
+    { title:"ผู้ช่วยวิทยากรโครงการส่งเสริมทักษะทางวิศวกรรมราชภัฏอุดรธานี-เซนต์เมรี่", issuer:"โรงเเรียนเซนต์เมรี่ จังหวัดอุดรธานี", image:"images/senamey.jpg" },
     { title:"การแข่งขันทักษะควบคุมหุ่นยนต์ Collaborative robot", issuer:"Cobot Contest Thailand 2024", image:"images/cobotcontest.jpg" },
     { title:"ฝึกประสอบการณ์ วิชาชีพ", issuer:"โรงพยาบาล อุดรธานี ", image:"images/hospital.jpg" }
   ],
