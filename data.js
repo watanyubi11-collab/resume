@@ -4,7 +4,7 @@ const DATA = {
   nick: "big",
   role: "IT Support & System Admin",
   status: "● พร้อมรับงานใหม่",
-  typing: ["IT Support", "Network & Hardware", "Troubleshooter","WEB-Site"],
+  typing: ["IT Support", "Network & Hardware", "Troubleshooter"],
   intro: "ดูแลระบบคอมพิวเตอร์และเครือข่าย แก้ปัญหาหน้างานได้รวดเร็ว และสนใจพัฒนาทักษะด้าน IT , Developer อย่างต่อเนื่อง",
   photo: "images/profile.jpg",
   about: "ผมจบปริญญาตรี สาขาวิศวกรรมคอมพิวเตอร์และการสื่อสาร จากมหาวิทยาลัยราชภัฏอุดรธานี เริ่มต้นสายงานจากการเป็น Admin ที่ร้านมือถือ ได้ฝึกประเมินอาการเสีย ซ่อมเครื่อง และอธิบายปัญหาทางเทคนิคให้ลูกค้าเข้าใจง่าย ปัจจุบันทำงานเป็น IT Support ที่โรงเรียนกวดวิชา ดูแลคอมพิวเตอร์ ระบบเครือข่าย และบัญชีผู้ใช้ พร้อมพัฒนาเว็บไซต์ของโรงเรียนด้วย PHP, JavaScript และ MySQL นอกจากนี้เคยทำโครงงานมือหุ่นยนต์ด้วย Arduino และ Fusion 360 ตอนนี้กำลังศึกษา  Linux, Cloud และ Cybersecurity เพื่อก้าวไปเป็นผู้ดูแลระบบที่ดูแลโครงสร้างพื้นฐานไอทีได้ครบวงจร",
@@ -13,14 +13,12 @@ const DATA = {
   skills: [
     ["Hardware & การซ่อมบำรุงคอมพิวเตอร์", 90],
     ["Windows / Microsoft Office", 90],
-    ["Developer", 75],
     ["Network พื้นฐาน (LAN, Wi-Fi, TCP/IP)", 75],
-    ["Helpdesk & Ticketing", 80],
-    ["Linux เบื้องต้น", 55]
+    ["Helpdesk & Ticketing", 90],
   ],
-  tools: ["Windows 10/11","Windows Server","Active Directory","Microsoft 365","Remote Desktop","TeamViewer","Router / Switch","CCTV","Printer / Scanner","Antivirus","PHP","HTML","CSS","JavaScript","IOT"],
+  tools: ["Windows 10/11","Windows Server","Active Directory","Microsoft 365","Remote Desktop","Router / Switch","CCTV","Printer / Scanner","Antivirus","PHP","HTML","CSS","IOT"],
 
-  learning: ["Cisco CCNA","Linux","Cloud (AWS/Azure)","Cybersecurity","Python Scripting","C#"],
+  learning: ["Cisco CCNA","Linux","Cloud (AWS/Azure)","Cybersecurity","Python Scripting","C#","Javascript"],
 
   timeline: [
     { title:"IT Support — โรงเรียนกวดวิชาหมอสอนลูก", meta:"2025 — ปัจจุบัน", points:["ดูแลและแก้ปัญหาคอมพิวเตอร์ ปริ้นเตอร์ และอุปกรณ์ในสำนักงาน","ตั้งค่าบัญชีผู้ใช้ อีเมล และสิทธิ์การเข้าถึงระบบ","ให้คำแนะนำและอบรมการใช้งานแก่พนักงาน","ติดตั้งและซ่อมบำรุงเครื่องคอมพิวเตอร์ เดินสาย LAN","ติดตั้งกล้องวงจรปิดและตั้งค่าเครือข่ายพื้นฐาน"] },
@@ -36,8 +34,9 @@ const DATA = {
   ],
 
   certs: [
-    { title:"ชื่อเกียรติบัตร / ใบรับรอง", issuer:"หน่วยงานที่ออก · 2024", image:"images/cert1.jpg" },
-    { title:"CompTIA A+ / CCNA / อื่นๆ", issuer:"หน่วยงานที่ออก · 2023", image:"images/cert2.jpg" }
+    { title:"ผู้ช่วยวิทยากรโครงการส่งเสริมทักษะทางวิศวกรรมราชภัฏอุดรธานี-เซนต์เมรี่", issuer:"โรงเเรียนเซนต์เมรี่ จังหวัดอุดรธานี", image:"images/senamery.jpg" },
+    { title:"การแข่งขันทักษะควบคุมหุ่นยนต์ Collaborative robot", issuer:"Cobot Contest Thailand 2024", image:"images/cobotcontest.jpg" },
+    { title:"ฝึกประสอบการณ์ วิชาชีพ", issuer:"โรงพยาบาล อุดรธานี ", image:"images/hospital.jpg" }
   ],
 
   contacts: [["📧","อีเมล","watanyu.pongs@gmail.com","mailto:watanyu.pongs@gmail.com"],
